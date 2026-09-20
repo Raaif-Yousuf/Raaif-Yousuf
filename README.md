@@ -21,8 +21,9 @@ I'm a computer science student at Vanderbilt (graduating May 2027). I build desk
 
 **Open source**
 
-- tauri-apps/tauri [#16058](https://github.com/tauri-apps/tauri/pull/16058): stop `tauri info` from crashing on non-semver package manager versions
-- dmlc/xgboost [#12583](https://github.com/dmlc/xgboost/pull/12583): fix `train()`/`cv()` crashing on Windows when a metric is NaN
+- tauri-apps/tauri [#16060](https://github.com/tauri-apps/tauri/pull/16060) (open): tauri-bundler cannot build an installer under the Windows SYSTEM account, because it caches its 32-bit NSIS and WiX tools below System32 and WOW64 redirects those tools somewhere they do not exist. The fix keeps them in the project output directory instead.
+- tauri-apps/tauri [#16058](https://github.com/tauri-apps/tauri/pull/16058) (open): stop `tauri info` from crashing on package manager versions that are not valid semver.
+- dmlc/xgboost [#12583](https://github.com/dmlc/xgboost/pull/12583) (merged): fix `train()` and `cv()` crashing on Windows when a metric is NaN, which MSVC prints as `-nan(ind)`.
 
 **Stack:** Python, TypeScript, C++, Rust, SQL · React, Tauri, FastAPI · DuckDB, Polars, PyTorch, XGBoost · GCP, Docker, GitHub Actions
 
