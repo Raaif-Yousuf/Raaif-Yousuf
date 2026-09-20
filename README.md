@@ -13,8 +13,10 @@ I'm a computer science student at Vanderbilt (graduating May 2027). I build desk
 - [Abako_emulator](https://github.com/Raaif-Yousuf/Abako_emulator) (private): a pixel-level emulator of the AB-991EX scientific calculator for Windows, macOS and the web. A zero-dependency TypeScript core takes key presses through a parser and evaluator onto a 192x63 LCD framebuffer, wrapped in Tauri 2, with 245 golden screen tests so any change that moves a pixel fails the suite.
 - [Abako](https://github.com/Raaif-Yousuf/Abako) (private): a desktop app that runs a national math competition end to end. An Excel question bank goes in, and a 60-question exam with a synced answer key, percentile grading and a printable report card and certificate for every student comes out. Electron, Flask and Python.
 
-**Other projects**
+**Benchmarks and side projects**
 
+- [Zero-Shot-Variant-Effect](https://github.com/Raaif-Yousuf/Zero-Shot-Variant-Effect): a benchmark asking whether DNA language models small enough to run on a laptop CPU can predict variant effects with no training. On 3,644 BRCA1 saturation genome editing SNVs, HyenaDNA and Nucleotide Transformer v2 sit at about 0.45 AUROC against 0.83 for a plain conservation score, with positive controls showing the result is the method and not the harness.
+- [AI-Song-lyrics-Generation](https://github.com/Raaif-Yousuf/AI-Song-lyrics-Generation): artist-conditioned lyric generation in PyTorch. An LSTM, a GRU and two transformers on one split and the same 12.3M training tokens, from 2.608 down to 1.892 test bits per character, with an n-gram check showing the best model is also the one that copies most.
 - [Syringe_Pump](https://github.com/Raaif-Yousuf/Syringe_Pump): a 3D-printed syringe pump with Arduino firmware.
 
 **Open source**
