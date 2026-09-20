@@ -10,8 +10,6 @@ I'm a computer science student at Vanderbilt (graduating May 2027). I build desk
 
 **Other projects**
 
-- [Sudoku-Solver](https://github.com/Raaif-Yousuf/Sudoku-Solver): C++17, bitmask + constraint propagation solver, about 470x faster than backtracking on Norvig's hard set.
-- [AI-Handwritten-Character-Recognition](https://github.com/Raaif-Yousuf/AI-Handwritten-Character-Recognition): Keras CNN, 99.39% on MNIST and 88.46% on 47-class EMNIST.
 - [Syringe_Pump](https://github.com/Raaif-Yousuf/Syringe_Pump): a 3D-printed syringe pump with Arduino firmware.
 
 **Open source**
