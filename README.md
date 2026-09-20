@@ -10,8 +10,8 @@ I'm a computer science student at Vanderbilt (graduating May 2027). I build desk
 
 **Built at Abako**
 
+- [Abako](https://github.com/Raaif-Yousuf/Abako): a desktop app that runs a national math competition end to end. An Excel question bank goes in, and a 60-question exam with a synced answer key, percentile grading and a printable report card and certificate for every student comes out. Electron, Flask and Python.
 - [Abako_emulator](https://github.com/Raaif-Yousuf/Abako_emulator) (private): a pixel-level emulator of the AB-991EX scientific calculator for Windows, macOS and the web. The core is plain TypeScript with no DOM in it, taking key presses through a parser and evaluator onto a 192x63 LCD framebuffer, wrapped in Tauri 2, with 244 golden screen tests so any change that moves a pixel fails the suite.
-- [Abako](https://github.com/Raaif-Yousuf/Abako) (private): a desktop app that runs a national math competition end to end. An Excel question bank goes in, and a 60-question exam with a synced answer key, percentile grading and a printable report card and certificate for every student comes out. Electron, Flask and Python.
 
 **Benchmarks and side projects**
 
