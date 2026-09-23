@@ -24,6 +24,10 @@ I'm a computer science student at Vanderbilt (graduating May 2027). I build desk
 - tauri-apps/tauri [#16060](https://github.com/tauri-apps/tauri/pull/16060) (open): tauri-bundler cannot build an installer under the Windows SYSTEM account, because it caches its 32-bit NSIS and WiX tools below System32 and WOW64 redirects those tools somewhere they do not exist. The fix keeps them in the project output directory instead.
 - tauri-apps/tauri [#16058](https://github.com/tauri-apps/tauri/pull/16058) (open): stop `tauri info` from crashing on package manager versions that are not valid semver.
 - dmlc/xgboost [#12583](https://github.com/dmlc/xgboost/pull/12583) (merged): fix `train()` and `cv()` crashing on Windows when a metric is NaN, which MSVC prints as `-nan(ind)`.
+- huggingface/huggingface_hub [#4950](https://github.com/huggingface/huggingface_hub/pull/4950) (fixed upstream): Windows downloads failed with a MAX_PATH error because the long-path prefix was decided before the `.incomplete` suffix was added. A maintainer landed a smaller version of my fix in [#4978](https://github.com/huggingface/huggingface_hub/pull/4978) and credited the PR.
+- microsoft/onnxruntime [#32707](https://github.com/microsoft/onnxruntime/pull/32707) (approved): `write_calibration_table` wrote with no explicit encoding, so one non-ASCII tensor name aborted a quantization export on Windows.
+- electron/packager [#1962](https://github.com/electron/packager/pull/1962) (open): when `--out` differed from the app directory only in case, the previous build was packed into the new app.
+- duckdb/duckdb-python [#626](https://github.com/duckdb/duckdb-python/pull/626) (open): `DataFrameReader.load` put the raw path into SQL, so paths with slashes, spaces or a drive colon failed to parse.
 
 **Stack:** Python, TypeScript, C++, Rust, SQL · React, Tauri, FastAPI · DuckDB, Polars, PyTorch, XGBoost · GCP, Docker, GitHub Actions
 
